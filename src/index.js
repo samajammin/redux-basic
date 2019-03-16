@@ -6,8 +6,18 @@ import todoApp from './reducers';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import {
+  // toggleTodo,
+  // setVisibilityFilter,
+  // VisibilityFilters,
+  addTodo
+} from './actions';
 
 const store = createStore(todoApp);
+
+store.dispatch(addTodo('Learn about actions'));
+store.dispatch(addTodo('Learn about reducers'));
+store.dispatch(addTodo('Learn about store'));
 
 ReactDOM.render(
   <Provider store={store}>
