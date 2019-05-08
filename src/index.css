@@ -23,4 +23,11 @@ code {
 
 .link {
   margin-left: 8px;
+  color: -webkit-link;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.active-link {
+  margin-left: 8px;
 }

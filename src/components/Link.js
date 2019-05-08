@@ -3,20 +3,19 @@ import PropTypes from 'prop-types';
 
 const Link = ({ active, children, onClick }) => {
   if (active) {
-    return <span className="link">{children}</span>;
+    return <span className="active-link">{children}</span>;
   }
 
   return (
-    <a
+    <span
       className="link"
-      href=""
       onClick={e => {
         e.preventDefault();
         onClick();
       }}
     >
       {children}
-    </a>
+    </span>
   );
 };
 

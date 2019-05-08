@@ -4,7 +4,7 @@ import { VisibilityFilters } from '../actions';
 
 const Header = () => (
   <p>
-    Display TODOs:{' '}
+    <strong>Display TODOs</strong>:{' '}
     <FilterLink filter={VisibilityFilters.SHOW_ALL}>All</FilterLink>
     <FilterLink filter={VisibilityFilters.SHOW_INCOMPLETE}>
       Incomplete
